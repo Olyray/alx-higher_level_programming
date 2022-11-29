@@ -6,4 +6,4 @@ def uppercase(str):
         if ascii_value >= 97 and ascii_value <= 122:
             str_list[i] = chr(ord(str_list[i]) - 32)
     final_string = "".join(str_list)
-    print(final_string)
+    print("{}".format(final_string))
