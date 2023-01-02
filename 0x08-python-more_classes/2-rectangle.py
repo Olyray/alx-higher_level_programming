@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""A Class for a rectangle"""
+
+
 class Rectangle:
     """
     A class representing a rectangle.
@@ -83,7 +87,8 @@ class Rectangle:
         Calculates the perimeter of the rectangle.
 
         Returns:
-            int: The perimeter of the rectangle. If width or height is equal to 0, returns 0.
+            int: The perimeter of the rectangle.
+            If width or height is equal to 0, returns 0.
         """
         if self.__width == 0 or self.__height == 0:
             return 0
