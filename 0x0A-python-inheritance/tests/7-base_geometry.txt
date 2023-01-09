@@ -1,0 +1,22 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.integer_validator("value", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "7-base_geometry.py", line 15, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: value must be greater than 0
+>>> base_geometry.integer_validator("value", 1)
+>>> base_geometry.integer_validator("value", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "7-base_geometry.py", line 15, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: value must be greater than 0
+>>> base_geometry.integer_validator("value", 123456789)
+>>> base_geometry.integer_validator("value", -123456789)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "7-base_geometry.py", line 15, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: value must be greater than 0
