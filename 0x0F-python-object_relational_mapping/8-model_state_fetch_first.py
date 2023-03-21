@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Prints the first item in the States table
+"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
