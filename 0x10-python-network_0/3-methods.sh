@@ -1,3 +1,3 @@
 #!/bin/bash
 # Print the options
-curl -sI "$1" | awk '/Allow/ {gsub(",", ", "); print substr($0, index($0, $2))}'
+curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
