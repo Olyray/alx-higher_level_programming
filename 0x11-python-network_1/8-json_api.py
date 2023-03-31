@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Check for valid JSON"""
+"""Python module to check for a valid JSON"""
 import requests
 from sys import argv
 import json
