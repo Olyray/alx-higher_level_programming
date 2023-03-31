@@ -5,8 +5,8 @@ import requests
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    value = {"email": sys.argv[2]}
+    website = sys.argv[1]
+    address = {"email": sys.argv[2]}
 
-    r = requests.post(url, data=value)
+    r = requests.post(website, data=address)
     print(r.text)
